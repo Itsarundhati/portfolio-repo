@@ -1,8 +1,8 @@
 const ITEMS = [
-  { y: "2025", role: "Senior Designer", co: "Dream Studio", desc: "Leading design for whimsical SaaS products." },
-  { y: "2023", role: "Product Designer", co: "Petal & Co", desc: "Built the design system from blossom to bloom." },
-  { y: "2021", role: "Freelance Creative", co: "Self", desc: "Brand identities for indie boutique brands." },
-  { y: "2020", role: "Junior Designer", co: "Sugar Lab", desc: "Crafting first pixels, falling in love with motion." },
+  { y: "2024 - cuurent", role: "Test Engineer", co: "Keyvalue Software Solutins", desc: "Building confidence in software through automation, API validation, performance testing, and deploying intelligent agent-based solutions" },
+  { y: "2022", role: "Associate Test Engineer", co: "Keyvalue Software Solutins", desc: "Started my journey in software testing, learning automation fundamentals and contributing to web application testing." },
+  { y: "2022", role: "BTech", co: "Mar Atanasius College of Engineering", desc: "Completed bacherlors in Electronics and Communications Engineering" },
+  { y: "2018", role: "High School Graduation", co: "Amrita Vidyalayam" },
 ];
 
 export function Timeline() {
@@ -11,7 +11,7 @@ export function Timeline() {
       <div className="mx-auto max-w-4xl">
         <div className="reveal mb-16 text-center">
           <p className="text-xs tracking-[0.3em] text-rose">❀ JOURNEY ❀</p>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl">My little timeline</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl">My timeline</h2>
         </div>
 
         <div className="relative">

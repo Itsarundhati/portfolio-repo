@@ -16,7 +16,7 @@ export function Projects() {
       <div className="mx-auto max-w-7xl">
         <div className="reveal mb-16 text-center">
           <p className="text-xs tracking-[0.3em] text-rose">♡ SELECTED WORK ♡</p>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl">Tiny universes I've built</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl">Quality I’ve Engineered</h2>
         </div>
 
         <div className="reveal grid auto-rows-[18rem] grid-cols-1 gap-5 md:grid-cols-3">

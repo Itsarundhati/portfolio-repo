@@ -1,8 +1,11 @@
 const SKILLS = [
-  { name: "Design", v: 95, icon: "✿" },
-  { name: "Development", v: 88, icon: "✦" },
-  { name: "Motion", v: 82, icon: "✧" },
-  { name: "Branding", v: 90, icon: "♡" },
+  { name: "Playwright", v: 95, icon: "✿" },
+  { name: "JIRA", v: 90, icon: "✦" },
+  { name: "Postman", v: 80, icon: "✧" },
+  { name: "Git", v: 85, icon: "♡" },
+  { name: "JMeter", v: 85, icon: "✩" },
+  { name: "JAVA", v: 80, icon: "★" },
+  { name: "Maven", v: 75, icon: "⟐" },
 ];
 
 function Ring({ v, icon }: { v: number; icon: string }) {
@@ -40,7 +43,7 @@ export function Skills() {
       <div className="mx-auto max-w-6xl">
         <div className="reveal mb-16 text-center">
           <p className="text-xs tracking-[0.3em] text-rose">✦ SKILLS ✦</p>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl">Things I'm sweet at</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl">Where I shine</h2>
         </div>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {SKILLS.map((s) => (

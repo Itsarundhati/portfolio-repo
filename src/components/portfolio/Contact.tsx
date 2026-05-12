@@ -9,7 +9,7 @@ export function Contact() {
       <div className="mx-auto max-w-3xl">
         <div className="reveal mb-12 text-center">
           <p className="text-xs tracking-[0.3em] text-rose">✿ GET IN TOUCH ✿</p>
-          <h2 className="mt-3 font-display text-5xl md:text-6xl">Let's make something dreamy</h2>
+          <h2 className="mt-3 font-display text-5xl md:text-6xl">Let’s make reliability feel effortless</h2>
           <p className="mt-4 text-muted-foreground">I'd love to hear about your project ♡</p>
         </div>
 
@@ -48,7 +48,7 @@ export function Contact() {
             </span>
           </label>
           <div className="flex items-center justify-between">
-            <p className="text-xs text-muted-foreground">or email luna@dream.studio</p>
+            <p className="text-xs text-muted-foreground">or email arundhatidevi24@gmail.com</p>
             <MagneticButton>
               {sent ? "Sent! ♡" : "Send with love →"}
             </MagneticButton>

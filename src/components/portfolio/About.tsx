@@ -1,6 +1,6 @@
-import profile from "@/assets/profile.jpg";
+import profile from "@/assets/profile.png";
 
-const SKILLS = ["a", "b", "c", "d", "e"];
+const SKILLS = ["Automation", "Reliability", "Agents", "Deployment", "Performance"];
 
 export function About() {
   return (
@@ -27,10 +27,12 @@ export function About() {
                 const y = Math.sin(angle) * r;
                 return (
                   <div
-                    key={s}
-                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                    style={{ transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))` }}
-                  >
+                   key={s}
+                   className="absolute text-center whitespace-nowrap"
+                       style={{
+                            left: `calc(50% + ${x}px)`,
+                           top: `calc(50% + ${y}px)`,
+                            transform: "translate(-50%, -50%) rotate(0deg)", }}>
                     <div className="animate-[spin_22s_linear_infinite_reverse] glass rounded-full px-4 py-2 text-xs font-medium text-rose shadow-glow whitespace-nowrap">
                       {s}
                     </div>
@@ -52,7 +54,7 @@ export function About() {
             </p>
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
-                ["10+", "Projects"],
+                ["20+", "Projects"],
                 ["4y", "Experience"],
               ].map(([n, l]) => (
                 <div key={l} className="glass rounded-2xl p-4 text-center">

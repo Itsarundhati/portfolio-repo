@@ -17,7 +17,7 @@ export function Loader() {
           <div className="absolute inset-0 animate-morph bg-aurora animate-gradient shadow-glow" />
           <div className="absolute inset-3 animate-morph bg-white/70 backdrop-blur" style={{ animationDelay: "-0.6s" }} />
         </div>
-        <p className="font-display text-lg text-rose tracking-widest">d r e a m i n g…</p>
+        <p className="font-display text-lg text-rose tracking-widest">l o a d i n g…</p>
       </div>
     </div>
   );
