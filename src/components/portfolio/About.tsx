@@ -1,6 +1,6 @@
 import profile from "@/assets/profile.jpg";
 
-const SKILLS = ["UI/UX", "React", "Motion", "Branding", "3D", "Illustration"];
+const SKILLS = ["a", "b", "c", "d", "e"];
 
 export function About() {
   return (
@@ -16,7 +16,7 @@ export function About() {
           <div className="reveal relative mx-auto h-[22rem] w-[22rem] md:h-[26rem] md:w-[26rem]">
             <div className="absolute inset-0 rounded-full bg-aurora animate-gradient blur-2xl opacity-70" />
             <div className="absolute inset-4 overflow-hidden rounded-full glass-strong shadow-dreamy">
-              <img src={profile} alt="Portrait of Luna Rose" className="h-full w-full object-cover" width={768} height={896} />
+              <img src={profile} alt="Portrait of Arundhati" className="h-full w-full object-cover" width={768} height={896} />
             </div>
             {/* orbiting bubbles */}
             <div className="absolute inset-0 animate-[spin_22s_linear_infinite]">
@@ -41,21 +41,19 @@ export function About() {
           </div>
 
           <div className="reveal space-y-6">
-            <h3 className="font-display text-3xl md:text-4xl">Designing with a little sparkle ✨</h3>
+            <h3 className="font-display text-3xl md:text-4xl">Crafting quality with a little sparkle ✨</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a creative designer & developer crafting dreamy interfaces that feel as good as they look.
-              Five years deep into pixels, gradients, and the perfect border-radius — I believe great design
-              should feel like a soft hug.
+              I’m a QA Automation Engineer creating reliable digital experiences that work as beautifully as they’re built.
+               With experience in automation, API testing, performance validation, and intelligent system deployment,
+                I believe quality isn’t just checked — it’s thoughtfully engineered.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not designing, you'll find me sipping strawberry matcha, collecting stationery, or
-              chasing golden hour with my film camera.
+              When I’m not writing test scripts or solving tricky edge cases, you’ll usually find me sipping coffee, playing video games or sketching
             </p>
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
-                ["50+", "Projects"],
-                ["5y", "Experience"],
-                ["28", "Awards"],
+                ["10+", "Projects"],
+                ["4y", "Experience"],
               ].map(([n, l]) => (
                 <div key={l} className="glass rounded-2xl p-4 text-center">
                   <div className="font-display text-3xl text-gradient">{n}</div>

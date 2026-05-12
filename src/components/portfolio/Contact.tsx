@@ -57,7 +57,7 @@ export function Contact() {
       </div>
 
       <footer className="mx-auto mt-24 max-w-7xl border-t border-rose/20 px-6 py-10 text-center text-xs text-muted-foreground">
-        <p>© 2026 Luna Rose · Made with ♡ and a sprinkle of pixie dust</p>
+        <p>© 2026 Arundhati · Made with ♡ and a sprinkle of pixie dust</p>
       </footer>
     </section>
   );

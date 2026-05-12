@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { MagneticButton } from "./MagneticButton";
 
-const ROLES = ["Digital Designer", "Creative Developer", "Dream Weaver", "Visual Storyteller"];
+const ROLES = ["Test Engineer", "Quality Architect", "Automation Engineer"];
 
 export function Hero() {
   const [i, setI] = useState(0);
@@ -25,11 +25,11 @@ export function Hero() {
       <div className="relative max-w-5xl text-center">
         <div className="reveal in mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-xs tracking-widest text-rose">
           <span className="h-1.5 w-1.5 rounded-full bg-rose animate-pulse" />
-          AVAILABLE FOR DREAMY PROJECTS
+          Available for Quality-Driven Projects
         </div>
         <h1 className="font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] font-light">
           <span className="block">hello, i'm</span>
-          <span className="block text-gradient italic font-medium">Luna Rose</span>
+          <span className="block text-gradient italic font-medium">Arundhati</span>
         </h1>
 
         <div className="mt-6 h-8 overflow-hidden">
@@ -46,7 +46,7 @@ export function Hero() {
         </div>
 
         <p className="mx-auto mt-8 max-w-xl text-base text-muted-foreground/90">
-          Crafting soft, magical digital experiences where elegance meets a little bit of sparkle. ✨
+         Crafting reliable digital experiences where precision meets seamless performance. ✨
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

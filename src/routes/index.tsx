@@ -17,9 +17,9 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Luna Rose · Dreamy Portfolio" },
-      { name: "description", content: "A dreamy portfolio of magical, soft-pink digital design and creative development by Luna Rose." },
-      { property: "og:title", content: "Luna Rose · Dreamy Portfolio" },
+      { title: "Arundhati · Dreamy Portfolio" },
+      { name: "description", content: "A dreamy portfolio of magical, soft-pink digital design and creative development by Arundhati." },
+      { property: "og:title", content: "Arundhati · Dreamy Portfolio" },
       { property: "og:description", content: "A dreamy portfolio of magical, soft-pink digital design and creative development." },
     ],
     links: [
