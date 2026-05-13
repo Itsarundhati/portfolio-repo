@@ -1,4 +1,4 @@
-import { r as reactExports, V as jsxRuntimeExports } from "./server-DZtDTAxq.js";
+import { r as reactExports, V as jsxRuntimeExports } from "./server-aSsfuIKv.js";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
@@ -106,7 +106,7 @@ function Hero() {
     ] })
   ] });
 }
-const profile = "/assets/profile-Bd-Z4jNc.png";
+const profile = "/portfolio-repo/assets/profile-Bd-Z4jNc.png";
 const SKILLS$1 = ["Automation", "Reliability", "Agents", "Deployment", "Performance"];
 function About() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "about", className: "relative px-6 py-32", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-auto max-w-6xl", children: [
