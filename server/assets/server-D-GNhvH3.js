@@ -440,7 +440,7 @@ function requireReact() {
   return react.exports;
 }
 var reactExports = requireReact();
-const React = /* @__PURE__ */ getDefaultExportFromCjs(reactExports);
+const f$1 = /* @__PURE__ */ getDefaultExportFromCjs(reactExports);
 const isServer = true;
 function last(arr) {
   return arr[arr.length - 1];
@@ -4129,10 +4129,10 @@ function ErrorComponent({ error }) {
   });
 }
 function ClientOnly({ children, fallback = null }) {
-  return useHydrated() ? /* @__PURE__ */ jsxRuntimeExports.jsx(React.Fragment, { children }) : /* @__PURE__ */ jsxRuntimeExports.jsx(React.Fragment, { children: fallback });
+  return useHydrated() ? /* @__PURE__ */ jsxRuntimeExports.jsx(f$1.Fragment, { children }) : /* @__PURE__ */ jsxRuntimeExports.jsx(f$1.Fragment, { children: fallback });
 }
 function useHydrated() {
-  return React.useSyncExternalStore(subscribe, () => true, () => false);
+  return f$1.useSyncExternalStore(subscribe, () => true, () => false);
 }
 function subscribe() {
   return () => {
@@ -4151,7 +4151,7 @@ var hasRequiredReactDom_production;
 function requireReactDom_production() {
   if (hasRequiredReactDom_production) return reactDom_production;
   hasRequiredReactDom_production = 1;
-  var React2 = requireReact();
+  var React = requireReact();
   function formatProdErrorMessage(code) {
     var url = "https://react.dev/errors/" + code;
     if (1 < arguments.length) {
@@ -4190,7 +4190,7 @@ function requireReactDom_production() {
       implementation
     };
   }
-  var ReactSharedInternals = React2.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+  var ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
   function getCrossOriginStringAs(as, input) {
     if ("font" === as) return "";
     if ("string" === typeof input)
@@ -4549,7 +4549,7 @@ var hasRequiredReactDomServer_edge_production;
 function requireReactDomServer_edge_production() {
   if (hasRequiredReactDomServer_edge_production) return reactDomServer_edge_production;
   hasRequiredReactDomServer_edge_production = 1;
-  var React2 = requireReact(), ReactDOM = requireReactDom(), REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = /* @__PURE__ */ Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo"), REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy"), REACT_SCOPE_TYPE = /* @__PURE__ */ Symbol.for("react.scope"), REACT_ACTIVITY_TYPE = /* @__PURE__ */ Symbol.for("react.activity"), REACT_LEGACY_HIDDEN_TYPE = /* @__PURE__ */ Symbol.for("react.legacy_hidden"), REACT_MEMO_CACHE_SENTINEL = /* @__PURE__ */ Symbol.for("react.memo_cache_sentinel"), REACT_VIEW_TRANSITION_TYPE = /* @__PURE__ */ Symbol.for("react.view_transition"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+  var React = requireReact(), ReactDOM = requireReactDom(), REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = /* @__PURE__ */ Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo"), REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy"), REACT_SCOPE_TYPE = /* @__PURE__ */ Symbol.for("react.scope"), REACT_ACTIVITY_TYPE = /* @__PURE__ */ Symbol.for("react.activity"), REACT_LEGACY_HIDDEN_TYPE = /* @__PURE__ */ Symbol.for("react.legacy_hidden"), REACT_MEMO_CACHE_SENTINEL = /* @__PURE__ */ Symbol.for("react.memo_cache_sentinel"), REACT_VIEW_TRANSITION_TYPE = /* @__PURE__ */ Symbol.for("react.view_transition"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
   function getIteratorFn(maybeIterable) {
     if (null === maybeIterable || "object" !== typeof maybeIterable) return null;
     maybeIterable = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable["@@iterator"];
@@ -4763,7 +4763,7 @@ function requireReactDomServer_edge_production() {
   function sanitizeURL(url) {
     return isJavaScriptProtocol.test("" + url) ? "javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')" : url;
   }
-  var ReactSharedInternals = React2.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, sharedNotPendingObject = {
+  var ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, sharedNotPendingObject = {
     pending: false,
     data: null,
     method: null,
@@ -5333,7 +5333,7 @@ function requireReactDomServer_edge_production() {
   }
   function flattenOptionChildren(children) {
     var content = "";
-    React2.Children.forEach(children, function(child) {
+    React.Children.forEach(children, function(child) {
       null != child && (content += child);
     });
     return content;
@@ -9785,7 +9785,7 @@ performance.now();setTimeout(w,2300>q&&2E3<q?2300-q:500)})])},types:[]});z.ready
     };
   }
   function ensureCorrectIsomorphicReactVersion() {
-    var isomorphicReactPackageVersion = React2.version;
+    var isomorphicReactPackageVersion = React.version;
     if ("19.2.6" !== isomorphicReactPackageVersion)
       throw Error(
         'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.2.6\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -10040,7 +10040,7 @@ var hasRequiredReactDomServerLegacy_browser_production;
 function requireReactDomServerLegacy_browser_production() {
   if (hasRequiredReactDomServerLegacy_browser_production) return reactDomServerLegacy_browser_production;
   hasRequiredReactDomServerLegacy_browser_production = 1;
-  var React2 = requireReact(), ReactDOM = requireReactDom();
+  var React = requireReact(), ReactDOM = requireReactDom();
   function formatProdErrorMessage(code) {
     var url = "https://react.dev/errors/" + code;
     if (1 < arguments.length) {
@@ -10223,7 +10223,7 @@ function requireReactDomServerLegacy_browser_production() {
   function sanitizeURL(url) {
     return isJavaScriptProtocol.test("" + url) ? "javascript:throw new Error('React has blocked a javascript: URL as a security precaution.')" : url;
   }
-  var ReactSharedInternals = React2.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, sharedNotPendingObject = {
+  var ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ReactDOMSharedInternals = ReactDOM.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, sharedNotPendingObject = {
     pending: false,
     data: null,
     method: null,
@@ -10568,7 +10568,7 @@ function requireReactDomServerLegacy_browser_production() {
   }
   function flattenOptionChildren(children) {
     var content = "";
-    React2.Children.forEach(children, function(child) {
+    React.Children.forEach(children, function(child) {
       null != child && (content += child);
     });
     return content;
@@ -15967,7 +15967,7 @@ function getResponse() {
 }
 var HEADERS = { TSS_SHELL: "X-TSS_SHELL" };
 async function getStartManifest(matchedRoutes) {
-  const { tsrStartManifest } = await import("./_tanstack-start-manifest_v-CMGQP9TH.js");
+  const { tsrStartManifest } = await import("./_tanstack-start-manifest_v-C21lazBi.js");
   const startManifest = tsrStartManifest();
   const rootRoute = startManifest.routes[rootRouteId] = startManifest.routes[rootRouteId] || {};
   rootRoute.assets = rootRoute.assets || [];
@@ -16796,8 +16796,8 @@ var baseManifestPromise;
 var cachedFinalManifestPromise;
 async function loadEntries() {
   const [routerEntry, startEntry, pluginAdapters] = await Promise.all([
-    import("./router-B8NB7KD-.js"),
-    import("./start-DdGOIztd.js"),
+    import("./router-D1vXihI1.js"),
+    import("./start-_jnY4-Fa.js"),
     import("./__23tanstack-start-plugin-adapters-Cwee5PKy.js")
   ]);
   return {
@@ -17145,13 +17145,13 @@ async function handleServerRoutes({ getRouter, request, url, executeRouter, cont
   }
   return ctx.response;
 }
-var fetch = createStartHandler(defaultStreamHandler);
+var fetch$1 = createStartHandler(defaultStreamHandler);
 function createServerEntry(entry) {
   return { async fetch(...args) {
     return await entry.fetch(...args);
   } };
 }
-var server_default = createServerEntry({ fetch });
+var server_default = createServerEntry({ fetch: fetch$1 });
 const server = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   createServerEntry,
@@ -17179,7 +17179,7 @@ export {
   requireReactDom as R,
   exactPathTest as S,
   removeTrailingSlash as T,
-  React as U,
+  f$1 as U,
   jsxRuntimeExports as V,
   isModuleNotFoundError as W,
   useHydrated as X,
@@ -17188,7 +17188,8 @@ export {
   getAssetCrossOrigin as _,
   arraysEqual as a,
   Outlet as a0,
-  server as a1,
+  getDefaultExportFromCjs as a1,
+  server as a2,
   isRedirect as b,
   createLRUCache as c,
   isNotFound as d,

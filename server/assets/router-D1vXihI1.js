@@ -1,4 +1,4 @@
-import { r as reactExports, f as functionalUpdate$1, a as arraysEqual, c as createLRUCache, i as isPromise, b as isRedirect, d as isNotFound, e as invariant, g as createControlledPromise, h as rootRouteId, j as isServer$1, k as compileDecodeCharMap, t as trimPath, l as rewriteBasepath, m as composeRewrites, p as processRouteTree, n as processRouteMasks, o as resolvePath, q as cleanPath, s as trimPathRight, u as parseHref, v as executeRewriteInput, w as isDangerousProtocol, x as redirect, y as findSingleMatch, z as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, A as buildRouteBranch, B as interpolatePath, C as nullReplaceEqualDeep, E as replaceEqualDeep$1, F as last, G as decodePath, H as findFlatMatch, I as findRouteMatch, J as hasKeys, K as executeRewriteOutput, L as encodePathLikeUrl, M as trimPathLeft, N as joinPaths, O as useRouter, P as dummyMatchContext, Q as matchContext, R as requireReactDom, S as exactPathTest, T as removeTrailingSlash, U as React, V as jsxRuntimeExports, W as isModuleNotFoundError, X as useHydrated, Y as escapeHtml, Z as isInlinableStylesheet, _ as getAssetCrossOrigin, $ as resolveManifestAssetLink, a0 as Outlet } from "./server-aSsfuIKv.js";
+import { r as reactExports, f as functionalUpdate$1, a as arraysEqual, c as createLRUCache, i as isPromise, b as isRedirect, d as isNotFound, e as invariant, g as createControlledPromise, h as rootRouteId, j as isServer$1, k as compileDecodeCharMap, t as trimPath, l as rewriteBasepath, m as composeRewrites, p as processRouteTree, n as processRouteMasks, o as resolvePath, q as cleanPath, s as trimPathRight, u as parseHref, v as executeRewriteInput, w as isDangerousProtocol, x as redirect, y as findSingleMatch, z as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, A as buildRouteBranch, B as interpolatePath, C as nullReplaceEqualDeep, E as replaceEqualDeep$1, F as last, G as decodePath, H as findFlatMatch, I as findRouteMatch, J as hasKeys, K as executeRewriteOutput, L as encodePathLikeUrl, M as trimPathLeft, N as joinPaths, O as useRouter, P as dummyMatchContext, Q as matchContext, R as requireReactDom, S as exactPathTest, T as removeTrailingSlash, U as f, V as jsxRuntimeExports, W as isModuleNotFoundError, X as useHydrated, Y as escapeHtml, Z as isInlinableStylesheet, _ as getAssetCrossOrigin, $ as resolveManifestAssetLink, a0 as Outlet } from "./server-D-GNhvH3.js";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
@@ -2280,7 +2280,7 @@ var Route$2 = class Route extends BaseRoute {
     this.useNavigate = () => {
       return useNavigate({ from: this.fullPath });
     };
-    this.Link = React.forwardRef((props, ref) => {
+    this.Link = f.forwardRef((props, ref) => {
       return /* @__PURE__ */ jsxRuntimeExports.jsx(Link, {
         ref,
         from: this.fullPath,
@@ -2345,7 +2345,7 @@ var RootRoute = class extends BaseRootRoute {
     this.useNavigate = () => {
       return useNavigate({ from: this.fullPath });
     };
-    this.Link = React.forwardRef((props, ref) => {
+    this.Link = f.forwardRef((props, ref) => {
       return /* @__PURE__ */ jsxRuntimeExports.jsx(Link, {
         ref,
         from: this.fullPath,
@@ -4663,7 +4663,7 @@ var QueryClientProvider = ({
   }, [client]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientContext.Provider, { value: client, children });
 };
-const appCss = "/portfolio-repo/assets/styles-BRvzxJ7S.css";
+const appCss = "/portfolio-repo/assets/styles-B96C6K1v.css";
 function NotFoundComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-7xl font-bold text-foreground", children: "404" }),
@@ -4747,21 +4747,21 @@ function RootComponent() {
   const { queryClient } = Route$1.useRouteContext();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}) });
 }
-const $$splitComponentImporter = () => import("./index-CQxJ8iHm.js");
+const $$splitComponentImporter = () => import("./index-CwzIxFyV.js");
 const Route2 = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component"),
   head: () => ({
     meta: [{
-      title: "Arundhati · Dreamy Portfolio"
+      title: "Arundhati · Portfolio"
     }, {
       name: "description",
-      content: "A dreamy portfolio of magical, soft-pink digital design and creative development by Arundhati."
+      content: "A portfoliot by Arundhati."
     }, {
       property: "og:title",
-      content: "Arundhati · Dreamy Portfolio"
+      content: "Arundhati ·Portfolio"
     }, {
       property: "og:description",
-      content: "A dreamy portfolio of magical, soft-pink digital design and creative development."
+      content: "A portfolio"
     }],
     links: [{
       rel: "preconnect",
