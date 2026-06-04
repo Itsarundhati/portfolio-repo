@@ -2,7 +2,7 @@ const ITEMS = [
   { y: "2024 - cuurent", role: "Test Engineer", co: "Keyvalue Software Solutins", desc: "Building confidence in software through automation, API validation, performance testing, and deploying intelligent agent-based solutions" },
   { y: "2022", role: "Associate Test Engineer", co: "Keyvalue Software Solutins", desc: "Started my journey in software testing, learning automation fundamentals and contributing to web application testing." },
   { y: "2022", role: "BTech", co: "Mar Atanasius College of Engineering", desc: "Completed bacherlors in Electronics and Communications Engineering" },
-  { y: "2018", role: "High School Graduation", co: "Amrita Vidyalayam" },
+  { y: "2018", role: "High School", co: "Amrita Vidyalayam" },
 ];
 
 export function Timeline() {
