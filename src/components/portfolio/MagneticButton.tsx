@@ -6,9 +6,17 @@ type Props = {
   onClick?: () => void;
   href?: string;
   className?: string;
+  type?: "button" | "submit" | "reset";
 };
 
-export function MagneticButton({ children, variant = "primary", onClick, href, className = "" }: Props) {
+export function MagneticButton({
+  children,
+  variant = "primary",
+  onClick,
+  href,
+  className = "",
+  type = "button",
+}: Props){
   const ref = useRef<HTMLButtonElement | HTMLAnchorElement>(null);
 
   const onMove = (e: MouseEvent) => {
@@ -46,7 +54,14 @@ export function MagneticButton({ children, variant = "primary", onClick, href, c
     );
   }
   return (
-    <button ref={ref as any} onClick={onClick} onMouseMove={onMove} onMouseLeave={onLeave} className={`${base} ${styles} ${className}`}>
+   <button
+  ref={ref as any}
+  type={type}
+  onClick={onClick}
+  onMouseMove={onMove}
+  onMouseLeave={onLeave}
+  className={`${base} ${styles} ${className}`}
+>
       {content}
     </button>
   );
