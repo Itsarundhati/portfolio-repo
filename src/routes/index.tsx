@@ -67,8 +67,8 @@ function Index() {
       <Nav />
       <Hero />
       <About />
-      {/* <Projects /> */}
-      <Skills />
+      <Projects />
+      {/* <Skills /> */}
       <Timeline />
       {/* <Testimonials /> */}
       <Contact />
