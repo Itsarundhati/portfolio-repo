@@ -28,7 +28,7 @@ export function Hero() {
           Available for Quality-Driven Projects
         </div>
         <h1 className="font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] font-light">
-          <span className="block">hello, i'm</span>
+          <span className="block">hello, I'm</span>
           <span className="block text-gradient italic font-medium">Arundhati</span>
         </h1>
 

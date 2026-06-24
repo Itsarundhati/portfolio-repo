@@ -17,10 +17,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Arundhati · Dreamy Portfolio" },
-      { name: "description", content: "A dreamy portfolio of magical, soft-pink digital design and creative development by Arundhati." },
-      { property: "og:title", content: "Arundhati · Dreamy Portfolio" },
-      { property: "og:description", content: "A dreamy portfolio of magical, soft-pink digital design and creative development." },
+      { title: "Arundhati · Portfolio" },
+      { name: "description", content: "A portfolio by Arundhati." },
+      { property: "og:title", content: "Arundhati ·  Portfolio" },
+      { property: "og:description", content: " Portfolio" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
