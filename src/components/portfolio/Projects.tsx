@@ -6,13 +6,13 @@ import v1 from "@/assets/video1.mp4";
 import v2 from "@/assets/video2.mp4";
 
 const PROJECTS = [
-  { type: "image", src: p1, span: "md:col-span-2 md:row-span-2" },
-  { type: "video", src: v1, span: "" },
-  { type: "image", src: p2, span: "" },
-  { type: "video", src: v2, span: "" },
-  { type: "image", src: p3, span: "" },
-  { type: "image", src: p4, span: "" }
-];
+  { type: "image", src: p1, alt: "Abstract art collage — portfolio side project", span: "md:col-span-2 md:row-span-2" },
+  { type: "video", src: v1, alt: "Short creative motion clip", span: "" },
+  { type: "image", src: p2, alt: "Photography and visual design experiment", span: "" },
+  { type: "video", src: v2, alt: "Animated visual art piece", span: "" },
+  { type: "image", src: p3, alt: "Mixed-media artwork", span: "" },
+  { type: "image", src: p4, alt: "Creative photography composition", span: "" },
+] as const;
 
 export function Projects() {
   return (
@@ -32,13 +32,14 @@ export function Projects() {
       {p.type === "image" ? (
         <img
           src={p.src}
-          alt=""
+          alt={p.alt}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         />
       ) : (
         <video
           src={p.src}
+          aria-label={p.alt}
           autoPlay
           muted
           loop
