@@ -1,4 +1,4 @@
-import profile from "@/assets/profile.png";
+import profile from "@/assets/profile.jpeg";
 
 const SKILLS = ["Automation", "Reliability", "Agents", "Deployment", "Performance"];
 
