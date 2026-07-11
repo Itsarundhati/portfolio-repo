@@ -3,6 +3,7 @@ import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
 import { Projects } from "@/components/portfolio/Projects";
+import { Sideart } from "@/components/portfolio/Sideart";
 import { Timeline } from "@/components/portfolio/Timeline";
 import { Contact } from "@/components/portfolio/Contact";
 import { Background } from "@/components/portfolio/Background";
@@ -44,6 +45,7 @@ export default function App() {
       <Hero />
       <About />
       <Projects />
+      <Sideart />
       <Timeline />
       <Contact />
       <div id="sparkle-layer" className="pointer-events-none fixed inset-0 z-[150]" />

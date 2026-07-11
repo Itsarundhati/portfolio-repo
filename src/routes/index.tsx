@@ -67,9 +67,9 @@ function Index() {
       <Nav />
       <Hero />
       <About />
+      <Timeline />
       <Projects />
       {/* <Skills /> */}
-      <Timeline />
       {/* <Testimonials /> */}
       <Contact />
       <div id="sparkle-layer" className="pointer-events-none fixed inset-0 z-[150]" />

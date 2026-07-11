@@ -4,9 +4,10 @@ const LINKS = [
   ["Home", "#home"],
   ["About", "#about"],
   ["Work", "#projects"],
+  // ["Work", "#projects"],
   // ["Skills", "#skills"],
   ["Journey", "#experience"],
-  ["Other", "#projects"],
+   ["Other", "#sideart"],
   ["Contact", "#contact"],
 ];
 
