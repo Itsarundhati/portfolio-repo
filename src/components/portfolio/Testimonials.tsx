@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Q = [
-  { q: "Luna turned our brand into a literal dream. Pure magic.", n: "Mira K.", r: "Founder, Petal Skincare" },
+  { q: "Luna  our brand into a literal dream. Pure magic.", n: "Mira K.", r: "Founder, Petal Skincare" },
   { q: "Working with Luna feels like opening a gift box every meeting.", n: "Sora T.", r: "CEO, Cloud Diaries" },
   { q: "The most detail-obsessed designer I've ever collaborated with.", n: "Ines L.", r: "Creative Director" },
 ];
